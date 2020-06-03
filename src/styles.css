@@ -1,0 +1,342 @@
+/* You can add global styles to this file, and also import other style files */
+
+.btn-info {
+    color: #fff;
+    background-color: #E91E63 !important;
+    border-color: #E91E63 !important;
+    /*set the color you want here*/
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open>.dropdown-toggle.btn-info {
+    color: #E91E63 !important;
+    background-color: #fff !important;
+    border-color: #E91E63 !important;
+    /*set the color you want here*/
+}
+
+.loading {
+    background: transparent url('https://camo.githubusercontent.com/eb84571006a25c0ae75fcf6510591e9dc74756e5/687474703a2f2f6f6d69657233696f792e626b742e636c6f7564646e2e636f6d2f6c6f6164696e67352e676966') center no-repeat;
+}
+
+.panel-heading {
+    padding: 0px !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 979px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 480px) {
+    h2,
+    .h2 {
+        font-size: 39px !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h2,
+    .h2 {
+        font-size: 30px !important;
+    }
+}
+
+
+/* share button */
+
+.mobile-social-share {
+    background: none repeat scroll 0 0 #EEEEEE;
+    display: block !important;
+    min-height: 70px !important;
+    margin: 50px 0;
+}
+
+.mobile-social-share h3 {
+    color: inherit;
+    float: left;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 25px 25px 0 25px;
+}
+
+.share-group {
+    float: right;
+    margin: 0;
+}
+
+.btn-group {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.mobile-social-share ul {
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    min-width: 61px;
+    padding: 0;
+}
+
+.share {
+    min-width: 17px;
+}
+
+.mobile-social-share li {
+    display: block;
+    font-size: 18px;
+    list-style: none outside none;
+    margin-bottom: 3px;
+    margin-left: 4px;
+    margin-top: 3px;
+}
+
+.btn-share {
+    background-color: #BEBEBE;
+    border-color: #CCCCCC;
+    color: #333333;
+}
+
+.btn-twitter {
+    background-color: #3399CC !important;
+    width: 51px;
+    color: #FFFFFF!important;
+}
+
+.btn-facebook {
+    background-color: #3D5B96 !important;
+    width: 51px;
+    color: #FFFFFF!important;
+}
+
+.btn-facebook {
+    background-color: #3D5B96 !important;
+    width: 51px;
+    color: #FFFFFF!important;
+}
+
+.btn-google {
+    background-color: #DD3F34 !important;
+    width: 51px;
+    color: #FFFFFF!important;
+}
+
+.btn-linkedin {
+    background-color: #1884BB !important;
+    width: 51px;
+    color: #FFFFFF!important;
+}
+
+.btn-whatsapp {
+    background-color: #25d366 !important;
+    width: 51px;
+    color: #FFFFFF!important;
+}
+
+.btn-pinterest {
+    background-color: #CC1E2D !important;
+    width: 51px;
+    color: #FFFFFF!important;
+}
+
+.btn-mail {
+    background-color: #FFC90E !important;
+    width: 51px;
+    color: #FFFFFF!important;
+}
+
+.caret {
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-top: 4px solid;
+    display: inline-block;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    width: 0;
+}
+
+#socialShare {
+    /*  max-width: 59px; */
+    margin-bottom: 0px;
+}
+
+#socialShare>a {
+    padding: 6px 10px 6px 10px;
+}
+
+@media (max-width: 320px) {
+    #socialHolder {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .mobile-social-share h3 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #socialShare {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .mobile-social-share h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 238px) {
+    .mobile-social-share h3 {
+        font-size: 12px;
+    }
+}
+
+.dropdown-menu {
+    margin-top: 0;
+    border: none;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    min-width: 0px !important;
+    right: 0 !important;
+    left: auto !important;
+    ;
+}
+
+
+/* mobile side bar */
+
+nav#mobile {
+    background: #2196f3;
+    padding-right: .25em;
+    position: absolute;
+    left: -18em;
+    top: 0;
+    padding-top: 5em;
+    box-sizing: border-box;
+    z-index: 20;
+    height: 100%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+nav#mobile.active {
+    left: 0;
+}
+
+.menu {
+    overflow-y: scroll;
+    height: 100%;
+    list-style: none;
+    line-height: 42px;
+    margin: auto;
+    padding-left: 0;
+    width: 15em;
+}
+
+.menu a {
+    /*  background: url('http://www.jqueryscript.net/demo/Android-style-Offcanvas-Sidebar-Navigation-with-jQuery-CSS3/menu-icon.png') no-repeat left top; */
+    color: #eee !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding-left: 3em;
+    width: 100%;
+}
+
+
+/* .menu a:hover {
+    margin-left: 1em;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+} */
+
+.menu li {
+    box-shadow: 3px 0 rgba(52, 152, 219, .2) inset;
+    margin-bottom: 5px;
+    padding-left: .5em;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+
+/* #mobile-nav {
+    background: url('http://www.jqueryscript.net/demo/Android-style-Offcanvas-Sidebar-Navigation-with-jQuery-CSS3/menu-icon.png');
+    cursor: pointer;
+    left: 2em;
+    height: 30px;
+    position: absolute;
+    top: 2em;
+    width: 30px;
+    z-index: 30;
+} */
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FF4987;
+    outline: 1px solid #FF4987;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF4987;
+    outline: 1px solid #FF4987;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #eee !important;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box !important;
+}
+
+#news {
+    -moz-column-width: 25em;
+    -webkit-column-width: 25em;
+    -moz-column-gap: .5em;
+    -webkit-column-gap: .5em;
+}
+
+.panel {
+    display: inline-block;
+    margin: .5em;
+    padding: 0;
+    width: 98%;
+}
+
+body {
+    overflow-x: hidden;
+}

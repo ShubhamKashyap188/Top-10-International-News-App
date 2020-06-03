@@ -1,0 +1,208 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class=" pull-left navbar-toggle" id="menu-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <!-- 
+            <div id="mobile-nav"></div> -->
+
+            <a class="navbar-brand " href="#">Top 10 International News</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!--   <ul class="nav navbar-nav pull-right">
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul> -->
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div id="wrapper" class="toggled">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                                Start Bootstrap
+                            </a>
+            </li>
+            <li *ngFor="let sources of categories.sources"><a style="cursor:pointer; text-decoration:none" (click)="searchChannel(sources.id,sources.name)">{{sources.name}}</a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+
+            <div class="row">
+                <!-- Blog Sidebar Widgets Column -->
+                <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs ">
+
+                    <!-- Side Widget Well -->
+                    <div class="well">
+                        <h4>Ads</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                    </div>
+                    <div class="well">
+                        <h4>Ads</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                    </div>
+
+                </div>
+                <!-- Blog Entries Column -->
+                <div class="col-lg-8 col-md-8 col-sm-6">
+
+                    <h2 class="page-header">
+
+                        {{name | uppercase }} NEWS
+                    </h2>
+                    <div class="row" id="news" style="padding-right: 10px;
+                            padding-left: 10px;">
+                        <!-- First Blog Post -->
+                        <div class="" *ngFor="let links of news.articles">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><img class="img-responsive loading" src="{{links.urlToImage}}" alt="">
+                                    <img *ngIf="!links.urlToImage" class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png" alt=""></div>
+                                <div class="panel-body">
+                                    <h4>{{links.title}}</h4>
+                                    <p>{{links.description}}</p>
+                                    <a class="btn btn-info" href="{{links.url}}" target="_blank">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                                    <!--  <a class="btn btn-success pull-right" href="{{links.url}}" target="_blank">Share <i class="fa fa-paper-plane"></i></a> -->
+                                    <a id="socialHolder">
+                                        <div id="socialShare" class="btn-group dropup share-group">
+                                            <a data-toggle="dropdown" class="btn btn-success">
+                                                <i class="fa fa-paper-plane fa-inverse"></i> Share
+                                            </a>
+                                            <button href="#" data-toggle="dropdown" class="btn btn-success dropdown-toggle share">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a data-original-title="WhatsApp" rel="tooltip" data-action="share/whatsapp/share" href="whatsapp://send?text=Top International News - http://latestinternationalnews.tk/" class="btn btn-whatsapp" data-placement="left">
+                                                        <i class="fa fa-whatsapp"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-original-title="Twitter" rel="tooltip" href="http://twitter.com/share?url=http://latestinternationalnews.tk/" target="_blank" class="btn btn-twitter" data-placement="left">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-original-title="Facebook" rel="tooltip" href="http://www.facebook.com/sharer/sharer.php?u=http://latestinternationalnews.tk/" class="btn btn-facebook" data-placement="left" target="_blank">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-original-title="Google+" rel="tooltip" href="https://plus.google.com/share?url=http://latestinternationalnews.tk/" target="_blank" class="btn btn-google" data-placement="left">
+                                                        <i class="fa fa-google-plus"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-original-title="LinkedIn" rel="tooltip" href="http://www.linkedin.com/shareArticle?url=http://latestinternationalnews.tk/&title=InternationalNews" class="btn btn-linkedin" data-placement="left" target="_blank">
+                                                        <i class="fa fa-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-original-title="Pinterest" rel="tooltip" class="btn btn-pinterest" data-placement="left" target="_blank">
+                                                        <i class="fa fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-original-title="Email" rel="tooltip" href="mailto:?subject=InternationalNews&body=http://latestinternationalnews.tk/" class="btn btn-mail" data-placement="left" target="_blank">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="panel-footer ">
+
+                                    Posted on {{links.publishedAt | date }} by <a>{{links.author}}</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Blog Sidebar Widgets Column -->
+                <div class="col-lg-2 col-md-2 col-sm-3  hidden-xs ">
+
+                    <!-- Blog Search Well -->
+                    <!--  <div class="well">
+                                <h4>Search</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                    </span>
+                                </div>
+                             
+                            </div> -->
+
+                    <!-- Blog Categories Well -->
+                    <app-category (notify)='onNotify($event)'></app-category>
+
+                    <!-- Side Widget Well -->
+                    <div class="well">
+                        <h4>Ads</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Pager -->
+            <!--  <ul class="pager">
+                        <li class="previous">
+                            <a href="#">← Older</a>
+                        </li>
+                        <li class="next">
+                            <a href="#">Newer →</a>
+                        </li>
+                    </ul> -->
+
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright © Top Internationls News 2017</p>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+            </footer>
+
+        </div>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<!-- Menu Toggle Script -->

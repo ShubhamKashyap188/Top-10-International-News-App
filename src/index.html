@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Latest International News</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This app provides latest international news, top international news etc. There are 69+ news channels. You can read top news of 69+ news channels">
+    <meta name="keyword" content="latest today news, top today news, latest international news, top international news, ABC News (AU), Al Jazeera English, Ars Technica, Associated Press, BBC News, BBC Sport, Bild, Bloomberg, Breitbart News, Business Insider, Business Insider (UK), Buzzfeed, CNBC, CNN, Daily Mail, Der Tagesspiegel, Die Zeit, Engadget, Entertainment Weekly, ESPN, ESPN Cric Info, Financial Times, Focus, Football Italia, Fortune, FourFourTwo, Fox Sports, Google News, Gruenderszene ">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/css/ng-spinning-preloader.css" rel="stylesheet">
+    <link href="./assets/css/blog-home.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="spinning-preloader-container">
+        <div class="spinning-preloader-elements"></div>
+    </div>
+    <app-root></app-root>
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <!-- or -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#mobile-nav').click(function(event) {
+                $('nav#mobile').toggleClass('active');
+            });
+            $('.grid').masonry({
+                // options... 
+                itemSelector: '.grid-item',
+                columnWidth: 200
+            });
+        });
+    </script>
+
+</body>
+
+</html>
